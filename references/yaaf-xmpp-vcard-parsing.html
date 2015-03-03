@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Parsing - Yaaf.Xmpp.VCard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.Xmpp.VCard/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.Xmpp.VCard/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.Xmpp.VCard/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.Xmpp.VCard/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/index.html">Yaaf.Xmpp.VCard</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Parsing</h1>
+<div class="xmldoc">
+    Defined in Yaaf.Xmpp.VCard.dll.
+</div>
+<div class="xmldoc">
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '1', 1)" onmouseover="showTip(event, '1', 1)">
+            createDomOrIntlElement isDomOrIntl
+          </code>
+          <div class="tip" id="1">
+            <strong>Signature:</strong> isDomOrIntl:bool option -&gt; XElement list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L690-690" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '2', 2)" onmouseover="showTip(event, '2', 2)">
+            createElemWithName name v
+          </code>
+          <div class="tip" id="2">
+            <strong>Signature:</strong> name:string -&gt; v:string -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L656-656" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '3', 3)" onmouseover="showTip(event, '3', 3)">
+            createIso8601 date
+          </code>
+          <div class="tip" id="3">
+            <strong>Signature:</strong> date:DateTime -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L684-684" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '4', 4)" onmouseover="showTip(event, '4', 4)">
+            createOptionalElemWithName name v
+          </code>
+          <div class="tip" id="4">
+            <strong>Signature:</strong> name:string -&gt; v:string option -&gt; XElement list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L658-658" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '5', 5)" onmouseover="showTip(event, '5', 5)">
+            createOptionalEmptyElemWithName (...)
+          </code>
+          <div class="tip" id="5">
+            <strong>Signature:</strong> name:string -&gt; create:bool -&gt; XElement list<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L662-662" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '6', 6)" onmouseover="showTip(event, '6', 6)">
+            createVCardAddressElem address
+          </code>
+          <div class="tip" id="6">
+            <strong>Signature:</strong> address:VCardAddress -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L697-697" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '7', 7)" onmouseover="showTip(event, '7', 7)">
+            createVCardAgentElem ref
+          </code>
+          <div class="tip" id="7">
+            <strong>Signature:</strong> ref:VCardReference -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L807-807" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '8', 8)" onmouseover="showTip(event, '8', 8)">
+            createVCardBirthdayElem date
+          </code>
+          <div class="tip" id="8">
+            <strong>Signature:</strong> date:DateTime -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L686-686" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '9', 9)" onmouseover="showTip(event, '9', 9)">
+            createVCardCategoriesElem cat
+          </code>
+          <div class="tip" id="9">
+            <strong>Signature:</strong> cat:VCardCategory -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L765-765" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            createVCardClassElem privacy
+          </code>
+          <div class="tip" id="10">
+            <strong>Signature:</strong> privacy:VCardPrivacy -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L788-788" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            createVCardElement id fromJid toJid data
+          </code>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> id:string -&gt; fromJid:JabberId option -&gt; toJid:JabberId option -&gt; data:VCardAction -&gt; Stanza&lt;VCardAction&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L860-860" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            createVCardEMailElem email
+          </code>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> email:VCardEMail -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L743-743" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+            createVCardGeoElem geo
+          </code>
+          <div class="tip" id="13">
+            <strong>Signature:</strong> geo:VCardGeo -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L753-753" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            createVCardInfoElement vcardInfo
+          </code>
+          <div class="tip" id="14">
+            <strong>Signature:</strong> vcardInfo:VCardInfo -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L819-819" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+            createVCardKeyElem key
+          </code>
+          <div class="tip" id="15">
+            <strong>Signature:</strong> key:VCardKey -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L801-801" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
+            createVCardLabelElem label
+          </code>
+          <div class="tip" id="16">
+            <strong>Signature:</strong> label:VCardLabel -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L714-714" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
+            createVCardNameElem name
+          </code>
+          <div class="tip" id="17">
+            <strong>Signature:</strong> name:VCardName -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L666-666" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
+            createVCardOrganizationElem org
+          </code>
+          <div class="tip" id="18">
+            <strong>Signature:</strong> org:VCardOrganization -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L759-759" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
+            createVCardPhotoElem elemName photo
+          </code>
+          <div class="tip" id="19">
+            <strong>Signature:</strong> elemName:string -&gt; photo:VCardPhoto -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L675-675" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
+            createVCardRevElem rev
+          </code>
+          <div class="tip" id="20">
+            <strong>Signature:</strong> rev:DateTime -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L770-770" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
+            createVCardSoundElem sound
+          </code>
+          <div class="tip" id="21">
+            <strong>Signature:</strong> sound:VCardSound -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L775-775" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
+            createVCardStanzaElement action
+          </code>
+          <div class="tip" id="22">
+            <strong>Signature:</strong> action:VCardAction -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L852-852" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
+            createVCardTelephoneElem tel
+          </code>
+          <div class="tip" id="23">
+            <strong>Signature:</strong> tel:VCardTelephone -&gt; XElement<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L725-725" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
+            getElemValue elem
+          </code>
+          <div class="tip" id="24">
+            <strong>Signature:</strong> elem:XElement -&gt; string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L310-310" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
+            hasElem elem elemName
+          </code>
+          <div class="tip" id="25">
+            <strong>Signature:</strong> elem:XElement -&gt; elemName:string -&gt; bool<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L317-317" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
+            isContentVCard stanza
+          </code>
+          <div class="tip" id="26">
+            <strong>Signature:</strong> stanza:IStanza -&gt; bool<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L302-302" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '27', 27)" onmouseover="showTip(event, '27', 27)">
+            isDomOrIntl elem
+          </code>
+          <div class="tip" id="27">
+            <strong>Signature:</strong> elem:XElement -&gt; bool option<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L348-348" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '28', 28)" onmouseover="showTip(event, '28', 28)">
+            parseContentVCard stanza
+          </code>
+          <div class="tip" id="28">
+            <strong>Signature:</strong> stanza:IStanza -&gt; VCardAction<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L631-631" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '29', 29)" onmouseover="showTip(event, '29', 29)">
+            parseContentVCardElem elem
+          </code>
+          <div class="tip" id="29">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardInfo<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L506-506" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '30', 30)" onmouseover="showTip(event, '30', 30)">
+            parseIso8601 elem
+          </code>
+          <div class="tip" id="30">
+            <strong>Signature:</strong> elem:string -&gt; DateTime<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L342-342" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '31', 31)" onmouseover="showTip(event, '31', 31)">
+            parseVCardAddress elem
+          </code>
+          <div class="tip" id="31">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardAddress<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L357-357" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '32', 32)" onmouseover="showTip(event, '32', 32)">
+            parseVCardAgent elem
+          </code>
+          <div class="tip" id="32">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardReference<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L500-500" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '33', 33)" onmouseover="showTip(event, '33', 33)">
+            parseVCardBirthday elem
+          </code>
+          <div class="tip" id="33">
+            <strong>Signature:</strong> elem:XElement -&gt; DateTime<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L346-346" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '34', 34)" onmouseover="showTip(event, '34', 34)">
+            parseVCardCategories elem
+          </code>
+          <div class="tip" id="34">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardCategory<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L456-456" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '35', 35)" onmouseover="showTip(event, '35', 35)">
+            parseVCardClass elem
+          </code>
+          <div class="tip" id="35">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardPrivacy<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L484-484" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '36', 36)" onmouseover="showTip(event, '36', 36)">
+            parseVCardEMail elem
+          </code>
+          <div class="tip" id="36">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardEMail<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L414-414" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '37', 37)" onmouseover="showTip(event, '37', 37)">
+            parseVCardGeo elem
+          </code>
+          <div class="tip" id="37">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardGeo<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L427-427" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '38', 38)" onmouseover="showTip(event, '38', 38)">
+            parseVCardKey elem
+          </code>
+          <div class="tip" id="38">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardKey<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L490-490" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '39', 39)" onmouseover="showTip(event, '39', 39)">
+            parseVCardLabel elem
+          </code>
+          <div class="tip" id="39">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardLabel<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L374-374" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '40', 40)" onmouseover="showTip(event, '40', 40)">
+            parseVCardName elem
+          </code>
+          <div class="tip" id="40">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardName<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L319-319" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '41', 41)" onmouseover="showTip(event, '41', 41)">
+            parseVCardOrganization elem
+          </code>
+          <div class="tip" id="41">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardOrganization<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L439-439" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            parseVCardPhoto elem
+          </code>
+          <div class="tip" id="42">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardPhoto<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L328-328" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
+            parseVCardRev elem
+          </code>
+          <div class="tip" id="43">
+            <strong>Signature:</strong> elem:XElement -&gt; DateTime<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L469-469" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
+            parseVCardSound elem
+          </code>
+          <div class="tip" id="44">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardSound<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L472-472" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
+            parseVCardStanza ns elem
+          </code>
+          <div class="tip" id="45">
+            <strong>Signature:</strong> ns:string -&gt; elem:XElement -&gt; Stanza&lt;VCardAction&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L653-653" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
+            parseVCardTelephone elem
+          </code>
+          <div class="tip" id="46">
+            <strong>Signature:</strong> elem:XElement -&gt; VCardTelephone<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L393-393" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
+            tryFindAndGetElemValue elem elemName
+          </code>
+          <div class="tip" id="47">
+            <strong>Signature:</strong> elem:XElement -&gt; elemName:string -&gt; string option<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L312-312" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+            vCardContentGenerator 
+          </code>
+          <div class="tip" id="48">
+            <strong>Signature:</strong> ContentGenerator&lt;VCardAction&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L859-859" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '49', 49)" onmouseover="showTip(event, '49', 49)">
+            vCardNs 
+          </code>
+          <div class="tip" id="49">
+            <strong>Signature:</strong> string<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="https://github.com/matthid//blob/master/src/source/Yaaf.Xmpp.VCard/ParsingVCard.fs#L297-297" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.Xmpp.VCard/index.html">
+            <img src="https://matthid.github.io/Yaaf.Xmpp.VCard/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.Xmpp.VCard</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.Xmpp.VCard/">Get Yaaf.Xmpp.VCard package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.Xmpp.VCard">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.Xmpp.VCard/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/DevelopReadme.html">Development Intro</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.VCard/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.Xmpp.VCard"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>
