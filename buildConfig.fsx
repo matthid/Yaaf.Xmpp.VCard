@@ -65,25 +65,14 @@ let buildConfig =
       CreateFSharpAssemblyInfo "./src/SolutionInfo.fs" info
       //CreateCSharpAssemblyInfo "./src/SolutionInfo.cs" info
       )
-    EnableProjectFileCreation = false
-    //GeneratedFileList =
-    //    [ "DnDns.dll"
-    //      "Mono.System.Xml.dll"
-    //      "Yaaf.Xml.dll"; "Yaaf.Xml.xml"
-    //      "Yaaf.Xmpp.Runtime.Core.dll"; "Yaaf.Xmpp.Runtime.Core.xml"
-    //      "Yaaf.Xmpp.Runtime.dll"; "Yaaf.Xmpp.Runtime.xml"; "Yaaf.Xmpp.Runtime.config" ]
     BuildTargets =
      [ { BuildParams.WithSolution with
           // The default build
           PlatformName = "Net45"
-          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
-          AfterBuild = fun _ -> File.Delete "build/net45/FSharp.Core.dll"
           SimpleBuildName = "net45" }
        (*{ BuildParams.WithSolution with
           // The default build
           PlatformName = "Profile111"
-          // Workaround FSharp.Compiler.Service not liking to have a FSharp.Core here: https://github.com/fsprojects/FSharpx.Reflection/issues/1
-          AfterBuild = fun _ -> File.Delete "build/profile111/FSharp.Core.dll"
           SimpleBuildName = "profile111"
           FindUnitTestDlls =
             // Don't run on mono.
