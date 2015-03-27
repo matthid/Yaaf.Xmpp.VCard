@@ -163,3 +163,36 @@ type VCardServerPlugin
     interface IXmppPlugin with
         member __.Name = "ImServerMessagePlugin"
         member __.PluginService = Service.None
+
+module XmppSetup =
+  let internal SetVCardConfig (setup, config:IVCardConfig) =
+      XmppSetup.SetConfig<VCardConfig,_> (setup, config)
+  let internal setVCardConfig config setup = SetVCardConfig(setup, config)
+  
+#if CSHARP_EXTENSIONS
+  [<System.Runtime.CompilerServices.Extension>]
+#endif
+  let AddVCard (setup: ClientSetup, config) = 
+      let setupVCard (runtime:XmppRuntime) = 
+          let mgr = runtime.PluginManager
+          mgr.RegisterPlugin<VCardServerPlugin>()
+      setup
+      |> setVCardConfig config
+      |> XmppSetup.addHelper ignore setupVCard
+  let addVCard config setup = AddVCard(setup, config)
+
+namespace Yaaf.Xmpp.VCard.Server
+
+open Yaaf.Xmpp.Server
+open Yaaf.Xmpp.VCard
+
+module XmppServerSetup = 
+
+    let addVCardPlugin config setup =
+        setup
+        |> XmppServerSetup.addToAllStreams (XmppSetup.addVCard config)
+        
+#if CSHARP_EXTENSIONS
+    [<System.Runtime.CompilerServices.Extension>]
+#endif
+    let AddVCardPlugin(setup, config) = addVCardPlugin config setup
